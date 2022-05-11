@@ -1,24 +1,23 @@
 # iv-slider
-### A powerful slider plug-in based on Vue，Expansion of [iview slider](https://www.iviewui.com/components/slider).
+### 一款基于Vue的滑块插件, 是基于[iview slider](https://www.iviewui.com/components/slider)的拓展。
 
-English & [简体中文](README-CN.md)
+[English](README.md) & 中文
 
 ## [Docs & Demo](https://lychub.github.io/v-slider/dist/)
 
-
-## How to use
+## 如何使用
 
 ```
 npm i iv-slider -S
 ```
-Using in webpack, part of the code is omitted:
+在 webpack 中使用，部分代码省略：
 ``` js
 import Vue from 'vue';
 import ivSlider from 'iv-slider';
 Vue.use(ivSlider);
 ```
 
-Using in .vue file：
+在 vue 中使用：
 ``` html
 <template>
     <iv-slider v-model="value"></iv-slider>
