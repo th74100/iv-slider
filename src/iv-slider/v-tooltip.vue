@@ -1,5 +1,5 @@
 <template>
-    <div :class="[prefixCls]" @mouseenter="handleShowPopper" @mouseleave="handleClosePopper">
+    <div :class="[prefixCls]" @mouseenter="handleShowPopper" @mousedown="handleShowPopper" @mouseleave="handleClosePopper">
         <div :class="[prefixCls + '-rel']" ref="reference">
             <slot></slot>
         </div>
@@ -9,6 +9,7 @@
                     ref="popper"
                     v-show="!disabled && (visible || always)"
                     @mouseenter="handleShowPopper"
+                    @mousedown="handleShowPopper"
                     @mouseleave="handleClosePopper"
             >
                 <div :class="[prefixCls + '-content']">
