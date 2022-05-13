@@ -33,7 +33,7 @@
               v-for="(item, index) in scales"
               :key="index"
               :style="item"
-              :class="{'active': parseInt(barStyle.width.replace('%','')) >= parseInt(item.val.replace('%',''))}"
+              :class="{'active': parseInt(barStyle.width.replace('%','')) >= parseInt(item.val.replace('%','')) && !disabled}"
       >{{item.val}}</span>
         </div>
 
